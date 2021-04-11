@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="top">
+            <p id="txt">DEG</p>
+        <input onclick="addnum(this)" id="res" type="text" value="" disabled>
+        <p id="demo"></p>
+            <hr>
+        </div>
+        <div id="bottom">
+            <div id="number">
+                <button onclick="window.location=''" class="numbers">C</button>
+                <button value="+/-" onclick="addnum(this)" class="numbers">+/-</button>
+                <button value="%" onclick="addnum(this)"  class="numbers">%</button>
+                <button value="/" onclick="addnum(this)" class="numbers">/</button>
+                <button value="7" onclick="addnum(this)" class="numbers">7</button>
+                <button value="8" onclick="addnum(this)" class="numbers">8</button>
+                <button value="9" onclick="addnum(this)" class="numbers">9</button>
+                <button value="x" onclick="addnum(this)"  class="numbers">x</button>
+                <button value="4" onclick="addnum(this)" class="numbers">4</p></button>
+                <button value="5" onclick="addnum(this)" class="numbers">5</p></button>
+                <button value="6" onclick="addnum(this)" class="numbers">6</p></button>
+                <button value="-" onclick="addnum(this)" class="numbers">-</button>
+                <button value="1" onclick="addnum(this)" class="numbers">1</button>
+                <button value="2" onclick="addnum(this)" class="numbers">2</button>
+                <button value="3" onclick="addnum(this)" class="numbers">3</button>
+                <button value="+"onclick="addnum(this)" class="numbers">+</button>
+            </div>
+            <div id="number2">
+                <button value="0" onclick="addnum(this)" class="numbers" id="num0"><p>0</p></button>
+                <button value="." onclick="addnum(this)" class="numbers">.</button>
+                
+                <button onclick="process()" class="numbers" id="equal"><p>=</p></button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
